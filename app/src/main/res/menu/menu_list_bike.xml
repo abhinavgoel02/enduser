@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wheels2spin.enduser.activity.ListBikeActivity">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/filter"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_filter">
+    </item>
+
+</menu>

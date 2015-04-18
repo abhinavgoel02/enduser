@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Wheels2spin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="one_day">One Day</string>
+    <string name="two_days">Two Days</string>
+    <string name="one_week">One Week</string>
+    <string name="one_month">One Month</string>
+    <string name="or">OR</string>
+    <string name="my_drop_off_date">Select My Own Date</string>
+    <string name="title_activity_additional_options">AdditionalOptions</string>
+    <string name="title_activity_location_picker">LocationPickerActivity</string>
+    <string name="title_activity_login">Log In</string>
+    <string name="facebook_app_id">948484401851417</string>
+    <string name="title_activity_account_settings">AccountSettings</string>
+
+    <string name="parse_app_id">FAqYVkU1RS0X2eW5vyBEs3PAIOuklKkJctbYXxSZ</string>
+    <string name="parse_client_key">V8uczvgbjf5cAJZDaM65gLoGCfjVdrSb6pBcdxNS</string>
+
+    <string-array name="my_facebook_permissions">
+        <item>public_profile</item>
+        <item>user_friends</item>
+    </string-array>
+
+    <string name="select_pick_up_date">On which date would you like to rent a bike?</string>
+    <string name="duration_of_rent">How long do you plan to keep the bike with you?</string>
+    <string name="select_drop_off_date">On which date would you drop the bike back?</string>
+
+    <string name="pick_up_date">Pick-up:</string>
+    <string name="drop_off_date">Drop-off:</string>
+
+    <string name="my_current_location">My Current Location</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_bike_model">Enter Bike Model</string>
+    <string name="selected_locations">selected_locations</string>
+    <string name="selected_bikes">selected_bikes</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_date_picker">DatePickerActivity</string>
+    <string name="title_activity_bike_picker">BikePickerActivity</string>
+
+    <string name="book">Book</string>
+    <string name="action_filter">Filter</string>
+    <string name="title_activity_review_booking">ReviewBookingActivity</string>
+</resources>

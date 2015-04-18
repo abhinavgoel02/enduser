@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wheels2spin.enduser.fragments.AutoCompleteListView">
+
+    <EditText
+        android:id="@+id/auto_complete_text"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:inputType="textCapWords"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/auto_complete_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="multipleChoice"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:src="@drawable/tick"/>
+
+</LinearLayout>

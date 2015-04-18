@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.wheels2spin.enduser.activity.ReviewBookingActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/bike_details_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bike Details"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:textColor="#ffffff"
+        android:background="#f44336"/>
+
+    <com.parse.ParseImageView
+        android:layout_below="@id/bike_details_header"
+        android:id="@+id/bike_image"
+        android:src="@drawable/bike1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bike_name"
+        android:text="Hero Honda Karizma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bike_image"/>
+
+    <TextView
+        android:id="@+id/booking_details_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Details"
+        android:layout_below="@id/bike_image"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:textColor="#ffffff"
+        android:background="#f44336"/>
+
+    <LinearLayout
+        android:id="@+id/dates"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/booking_details_header"
+        style="?android:buttonBarStyle">
+    <Button
+        android:id="@+id/pick_up_date"
+        android:clickable="false"
+        android:layout_width="0dp"
+        android:text="Pick-up:\nThu, 21 Jan"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/calendar"
+        android:drawableStart="@drawable/calendar"
+        android:layout_weight="0.5"
+        style="?android:buttonBarButtonStyle"/>
+
+    <Button
+        android:id="@+id/drop_off_date"
+        android:clickable="false"
+        android:layout_width="0dp"
+        android:text="Drop-off:\nFri, 22 Jan"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/calendar"
+        android:drawableStart="@drawable/calendar"
+        android:layout_weight="0.5"
+        style="?android:buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pick_up_location"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/marker"
+        android:drawableStart="@drawable/marker"
+        android:layout_below="@id/dates"
+        android:layout_centerHorizontal="true"
+        android:text="Gachibowli, Hyderabad"
+        style="?android:buttonBarButtonStyle"/>
+
+    <TextView
+        android:id="@+id/cost_breakdown_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cost Breakdown"
+        android:layout_below="@id/pick_up_location"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:textColor="#ffffff"
+        android:background="#f44336"/>
+
+    <TextView
+        android:id="@+id/rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent per day:"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_below="@id/cost_breakdown_header"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/rent_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 100"
+        android:gravity="end"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_below="@id/cost_breakdown_header"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/convenience_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convenience fee:"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_below="@id/rent"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/convenience_fee_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 15"
+        android:gravity="end"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_below="@id/rent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount:"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_below="@id/convenience_fee"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 115"
+        android:gravity="end"
+        android:padding="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_below="@id/convenience_fee"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Payment"/>
+
+
+</RelativeLayout>

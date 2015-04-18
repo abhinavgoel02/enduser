@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:textViewStyle">@style/TextViewTheme</item>
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
+
+    </style>
+
+    <style name="ActionBarTheme" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">#F44336</item>
+    </style>
+
+    <style name="TextViewTheme" parent="android:Widget.Holo.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:padding">@dimen/abc_text_size_large_material</item>
+    </style>
+
+</resources>
